@@ -11,14 +11,8 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
+
   api.versionsFrom('1.5');
   api.use('ecmascript');
   api.mainModule('react-menu-generator.jsx');
-});
-
-Package.onTest(function(api) {
-  api.use('ecmascript');
-  api.use('tinytest');
-  api.use('nodexpert:react-menu-generator');
-  api.mainModule('react-menu-generator-tests.jsx');
 });
